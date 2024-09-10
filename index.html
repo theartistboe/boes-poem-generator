@@ -12,23 +12,29 @@
 
 <body>
     <div class="container">
-    <header>
-        <h1>Boe's Poem Generator</h1>
-    </header>
-    <main>
-        <form id="poem-generator-form">
-        <input type="text" placeholder="Enter the topic of the poem" autofocus required autocomplete="off" class="instructions" id="user-instructions" />
-        <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
-    </main>
-    <footer>
-        This AI project is coded by <a href="https://github.com/theartistboe" target="_blank">Isaboe Hollis 😼</a> and
-        is <a href="https://github.com/theartistboe/boes-poem-generator.git" target="_blank">open-sourced on GitHub</a>
-        and hosted on <a href="https://boes-poem-generator.netlify.app/" target="_blank">Netlify.</a>
-    </footer>
+        <header>
+            <h1>Boe's Poem Generator</h1>
+        </header>
+        <main>
+            <div class="form-container">
+                <form id="poem-generator-form">
+                    <input type="text" placeholder="Enter the subject about a poem" autofocus required
+                        autocomplete="off" class="instructions" id="user-instructions" />
+                    <input type="submit" class="submit-button" />
+                </form>
+            <div class="hint">i.e. Moon, Flower, Paris</div>   
+        </main>
+        <div class="poem hidden" id="poem"></div>
+        <footer>
+            This AI project is coded by <a href="https://github.com/theartistboe" target="_blank">Isaboe Hollis 😼</a>
+            and
+            is <a href="https://github.com/theartistboe/boes-poem-generator.git" target="_blank">open-sourced on
+                GitHub</a>
+            and hosted on <a href="https://boes-poem-generator.netlify.app/" target="_blank">Netlify.</a>
+        </footer>
 
-    <script src="src/index.js"></script>
+        <script src="src/index.js"></script>
 </body>
 </div>
+
 </html>
